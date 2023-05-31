@@ -1,7 +1,7 @@
 <mat-toolbar>
   <span>Crypto Checker</span>
   <span class="example-spacer"></span>
-  <mat-form-field>
+  <mat-form-field appearance="outline">
     <mat-select
       (valueChange)="sendCurrency($event)"
       [(ngModel)]="selectedCurrency"

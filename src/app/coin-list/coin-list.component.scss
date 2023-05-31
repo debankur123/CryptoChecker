@@ -14,7 +14,7 @@
     letter-spacing: -0.0083em;
   }
   h6 {
-    color: black;
+    color: white;
     text-transform: capitalize;
     font-size: 0.8rem;
     font-weight: 500;
@@ -26,4 +26,38 @@
   background-image: url("../../assets/Banner.jpg");
   height: 500px;
   width: 100%;
+}
+
+.card{
+  border : 0;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  margin: 40px;
+  width: 100px;
+  height: 200px;
+  img{
+    width: 70px;
+    margin: 0 auto;
+
+  }
+  h5{
+    font-weight: 500;
+  }
+  p{
+    font-weight: 700;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
 }
