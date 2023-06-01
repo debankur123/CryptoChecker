@@ -28,25 +28,29 @@
   width: 100%;
 }
 
-.card{
-  border : 0;
+.card {
+  border: 0;
   background: transparent;
   color: white;
   padding: 10px;
   margin: 40px;
   width: 100px;
   height: 200px;
-  img{
+  img {
     width: 70px;
     margin: 0 auto;
-
   }
-  h5{
+  h5 {
     font-weight: 500;
   }
-  p{
+  p {
     font-weight: 700;
   }
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
 }
 
 table {
@@ -58,6 +62,23 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   width: 25%;
+}
+
+:host ::ng-deep .mat-sort-header-content {
+  color: #fff;
+}
+
+:host ::ng-deep .mat-paginator-outer-container {
+  background-color: rgb(36, 37, 37);
+}
+
+:host ::ng-deep tr.mat-header-row {
+  background-color: #009688;
+}
+
+:host ::ng-deep tr.mat-row {
+  height: 70px;
 }
