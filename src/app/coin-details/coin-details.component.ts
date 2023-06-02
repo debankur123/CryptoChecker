@@ -14,11 +14,26 @@ export class CoinDetailsComponent implements OnInit {
   coinId!: string;
   days: number = 1;
   currency: string = 'INR';
+  public lineChartData: ChartConfiguration['data'] = {
+    datasets:[
+      {
+        data : [],
+        label : 'Price Trends',
+        backgroundColor : 'rgba(148,159,177,0.2)',
+        borderColor : '#00988',
+        pointBackgroundColor : '#00988',
+        pointBorderColor : '#00988',
+        pointHoverBackgroundColor : '#00988',
+        pointHoverBorderColor : '#00988'
+      }
+    ],
+    labels : []
+  }
   constructor(private api: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      this.coinId = params['id'];
+      this.coinId = params['id']; 
     });
     this.getCoinData();
   }
