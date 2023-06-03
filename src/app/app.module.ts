@@ -16,6 +16,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [AppComponent, CoinListComponent, CoinDetailsComponent],
   imports: [
@@ -31,6 +33,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     MatPaginatorModule,
     MatSortModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
